@@ -1,0 +1,5 @@
+node_modules/
+*.html
+*.suggest.*
+.DS_Store
+.vscode/

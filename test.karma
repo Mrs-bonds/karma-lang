@@ -1,0 +1,4 @@
+<PAGE TITLE="Hello Karma" LAYOUT="main" BRAND="Karma" TAGLINE="Calm pages. Clear minds.">
+  <NAV LINKS="Home:test.karma, About:about.karma" />
+  <PARA TEXT="It works." />
+</PAGE>

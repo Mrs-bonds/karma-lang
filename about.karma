@@ -1,0 +1,4 @@
+<PAGE TITLE="About">
+  <NAV LINKS="Home:test.karma, About:about.karma" />
+  <PARA TEXT="This is the About page." />
+</PAGE>

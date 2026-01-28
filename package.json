@@ -1,0 +1,8 @@
+{
+  "name": "karma-lang",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "karma": "./karma-cli.js"
+  }
+}
