@@ -1,17 +1,11 @@
-# Karma (v1.0.0)
+# Karma
 
-A calm, opinionated markup language that compiles `.karma` files into HTML.
+Karma is built for people who are tired of fighting their tools.
 
-## Install
-npm install
+- **Karma exists to**: reduce mental load when building pages
+- **Karma prioritizes**: readability over cleverness
+- **Karma helps users by**: removing repetition and noise
+- **Karma listens by**: documenting real user pain, not feature demands
+- **Karma will never**: punish beginners or chase hype.
 
-## Build one page
-node karma-compiler.js test.karma --pro
-
-## Build output
-This writes `test.html` next to your `.karma` file.
-
-## Layouts (Pro)
-Put layouts in `layouts/` (example: `layouts/main.html`)
-Use in a page:
-<PAGE TITLE="Hello" LAYOUT="main" BRAND="Karma" TAGLINE="Calm pages. Clear minds.">
+That’s it. No code. No polish.
