@@ -1,3 +1,7 @@
+Simple by default. Powerful when needed.
+The core stays boring. Advanced features are optional and opt-in.
+
+
 # Karma
 
 Karma is an approachable toolset and language built to simplify development by focusing on clarity and developer productivity.
