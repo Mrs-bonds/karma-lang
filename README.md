@@ -1,78 +1,65 @@
+Karma v1.0.0
 Simple by default. Powerful when needed.
 The core stays boring. Advanced features are optional and opt-in.
-
-
-# Karma
-
-Karma is an approachable toolset and language built to simplify development by focusing on clarity and developer productivity.
-
----
-
-## **Introduction**
-
-**Karma** is a streamlined, beginner-friendly language and toolkit for developers who are tired of battling their tools. Whether you're prototyping a new feature, building responsive webpages, or creating reusable UI components, Karma focuses on reducing mental load and maximizing productivity.
-
-### Goals of Karma:
-- **Reduce Mental Load**: Make development intuitive and straightforward.
-- **Prioritize Readability Over Cleverness**: Code should be easy to read and maintain, even for beginners.
-- **Remove Repetition and Noise**: Develop pages and components without unnecessary boilerplate.
-- **Put Users First**: Focus on solving real developer frustrations, not chasing trendy features.
-- **Stay Beginner-Friendly**: Never punish beginners or overcomplicate the development process.
-
-That’s it. No code. No extra polish. Just tools that work for you, not against you.
-
----
-
-## **Installation**
-
-Follow these steps to install and set up Karma:
-
-### **1. Clone the Repository**
-First, clone the repository to your local machine. Open a terminal and run:
-```bash
+What is Karma
+Karma is an approachable toolset with a small, readable language designed to help developers build simple, stable websites with low mental load.
+It exists for people who are tired of fighting their tools and just want to ship clean, understandable pages.
+Karma prioritizes clarity, predictability, and ease over clever abstractions or endless configuration.
+Why Karma Exists
+Modern tooling often adds complexity faster than it adds value. Karma takes the opposite approach.
+Karma exists to:
+Reduce mental load during development
+Prioritize readability over cleverness
+Remove repetition and unnecessary boilerplate
+Solve real developer frustrations instead of chasing trends
+Stay beginner-friendly without limiting growth
+No hype. No magic. Just tools that work with you, not against you.
+What Karma Is (v1.0.0)
+A stable core for building page-based websites
+File-based and predictable
+Opinionated by design
+Calm, boring, and intentional
+What Karma Is Not
+A plugin marketplace
+A heavy framework
+A dashboard-driven system
+An “everything at once” platform
+Those things may come later — only if explicitly enabled.
+Who Karma Is For
+Developers who want simple websites without constant setup
+People who value clarity and readable code
+Beginners who don’t want to be punished by their tools
+Builders who prefer fewer decisions and fewer dependencies
+Who Karma Is Not For
+Complex web applications
+Feature-heavy dashboards
+Plugin-driven ecosystems
+Installation
+Karma currently runs locally using Node.js and compiles .karma files into usable output.
+1. Clone the repository
+Copy code
+Bash
 git clone https://github.com/Mrs-bonds/karma-lang.git
-```
-
-Navigate into the project directory:
-```bash
 cd karma-lang
-```
-
-### **2. Install Dependencies**
-Make sure you have **Node.js** installed. Then, install any project dependencies:
-```bash
+2. Install dependencies
+Copy code
+Bash
 npm install
-```
-
----
-
-## **Usage**
-
-Once installed, you can run Karma to compile and test your `.karma` files.
-
-### **1. Compiling Karma Files**
-Use the `karma-compiler.js` to compile `.karma` files. For example:
-```bash
+Usage
+Compile a .karma file
+Copy code
+Bash
 node karma-compiler.js path/to/file.karma
-```
-
-Karma will output the results into the defined path.
-
-### **2. Running the Karma Runtime**
-Execute `karma-runtime.js` to deploy or check components:
-```bash
+Karma outputs compiled results to the configured destination.
+Run the runtime
+Copy code
+Bash
 node karma-runtime.js
-```
-
----
-
-## **Sample Files**
-
-- `test.karma`: A sample file demonstrating how Karma handles logic.
-- `home.karma`: Example of a simple webpage built with Karma.
-- `about.karma`: Showcase Karma's minimalistic structure.
-
----
-
-### Development and Contribution
-You can freely modify or extend Karma by exploring and updating the files in the repository.
+Sample Files
+test.karma — demonstrates basic logic handling
+home.karma — example of a simple webpage
+Roadmap Philosophy
+Karma follows a simple rule:
+Start simple. Add power only when needed.
+The core will remain stable.
+Advanced features will always be optional and opt-in.
