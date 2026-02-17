@@ -450,11 +450,4 @@ console.error(`✅ Built: ${outPath}`);
 // entry
 if (buildAll) {
   const files = fs.readdirSync(baseDir).filter(f => f.toLowerCase().endsWith(".karma"));
-  if (!files.length) {
-    console.error("No .karma files found in this folder.");
-    process.exit(1);
-  }
-  files.forEach(f => compileOne(path.join(baseDir, f)));
-} else {
-  compileOne(arg);
-}
+  if (!files.length
