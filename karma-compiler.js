@@ -450,4 +450,39 @@ console.error(`✅ Built: ${outPath}`);
 // entry
 if (buildAll) {
   const files = fs.readdirSync(baseDir).filter(f => f.toLowerCase().endsWith(".karma"));
-  if (!files.length
+
+  if (!files.length) {
+    console.error("No .karma files found in:", baseDir);
+    process.exit(1);
+  }
+
+  let ok = 0;
+  let failed = 0;
+
+  for (const f of files) {
+    try {
+      const full = path.resolve(baseDir, f);
+      const outPath = compileOne(full);
+      if (outPath) ok++;
+      else failed++;
+    } catch (e) {
+      failed++;
+      console.error(`❌ Failed: ${f}`);
+      console.error(e?.stack || e);
+    }
+  }
+
+  console.error(`\nDone. ✅ ${ok} built, ❌ ${failed} failed.`);
+  process.exit(failed ? 1 : 0);
+} else {
+  // single file mode
+  const inputPath = path.resolve(baseDir, arg);
+
+  if (!fs.existsSync(inputPath)) {
+    console.error("File not found:", inputPath);
+    process.exit(1);
+  }
+
+  const outPath = compileOne(inputPath);
+  process.exit(outPath ? 0 : 1);
+}
